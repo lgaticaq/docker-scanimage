@@ -1,0 +1,7 @@
+api:
+  build: .
+  ports:
+    - "3000:3000"
+  privileged: true
+  volumes:
+    - /dev/bus/usb:/dev/bus/usb
