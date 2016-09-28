@@ -1,0 +1,6 @@
+version: v1.5.0
+ignore: {}
+patch:
+  'npm:minimatch:20160620':
+    - imgur > glob > minimatch:
+        patched: '2016-09-28T16:23:53.661Z'
