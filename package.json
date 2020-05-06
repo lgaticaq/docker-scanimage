@@ -8,7 +8,9 @@
     "prebuild": "npm run lint -s && npm run clean -s",
     "build": "babel src --out-dir lib --source-maps",
     "lint": "eslint src",
-    "clean": "rimraf lib"
+    "clean": "rimraf lib",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": ">=4"
@@ -34,7 +36,8 @@
     "imgur": "^0.3.0",
     "koa": "^2.0.0",
     "koa-router": "^5.3.0",
-    "uuid": "^3.0.0"
+    "uuid": "^3.0.0",
+    "snyk": "^1.319.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
@@ -85,5 +88,6 @@
       "syntax-async-functions",
       "transform-regenerator"
     ]
-  }
+  },
+  "snyk": true
 }
